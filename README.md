@@ -1,7 +1,7 @@
 #Node app. 
-To run the app, first pull the repo. Afterwards, open up your terminal or bash, and clone it to your machine.
+To run the app, first pull the repo. Next, open up your terminal or bash, and clone it to your machine.
 Afterwards, change the director into the cloned folder, where you will see 2 files: input.txt and tray.io.
-Type node tray.io into your terminal/bash, and app should run itself.
+Type `node tray.io` into your terminal/bash, and app should run itself.
 
 Goal
 The goal of the program is to take the room dimensions, the locations of the dirt patches, the hoover location and the driving instructions as input and to then output the following:
