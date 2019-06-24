@@ -22,7 +22,7 @@ fs.readFile('input.txt', 'utf8', (err, data) => {
         });
         let directions = split[split.length-1];
         parsedInput.push({directions: directions});
-
+        
         movement(parsedInput);
     };
 
@@ -151,13 +151,11 @@ fs.readFile('input.txt', 'utf8', (err, data) => {
         for ( var i = 0; i < newData.length; i++ ) {
             for ( var e = 0; e < newCords.length; e++ ) {
                 // console.log('data ', newData[i]);
-                // console.log('cords ', newCords[e]);
                 if (( newData[i].x === newCords[e].x) && ( newData[i].y === newCords[e].y)) {
                     foundDirt.push( newData[i] );
                 }
             }
         }
-
         let unique = [...new Set(foundDirt)]; 
         console.log(unique.length);
     }
